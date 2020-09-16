@@ -1,11 +1,11 @@
 # androrat
 made by hacker dj 
 metasploit payload creator
-#installation
+# installation
 git clone https://github.com/dhanu7673/
 cd androrat
 bash install.sh
-#run
+# run
 bash androrat.sh
-#requerments
+# requerments
 use mobile data and turn on hotspot 
