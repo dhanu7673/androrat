@@ -1,5 +1,6 @@
 #!/bin/bash
 cd .file
+rm -rf ip_clicked.txt
 bash .1.sh
 clear
 echo " " 
