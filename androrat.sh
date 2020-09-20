@@ -6,7 +6,7 @@ clear
 echo " " 
 echo "┌───── •✧✧• ─────┐
  Made By Hack3rDj
-└───── •✧✧• ─────┘        cradit goes to ghostlinux
+└───── •✧✧• ─────┘        credit goes to ghostlinux
                           ╱▔▔▔▔╲
                          ┃ ▇  ▇ ┃
                        ╭╮┣━━━━━━┫╭╮
