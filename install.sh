@@ -2,6 +2,7 @@
 clear
 tput setaf 1; echo " "
 pkg install figlet
+pkg install ncurses-utils
 pkg install ruby
 gem install lolcat
 pkg install zip
