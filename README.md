@@ -4,7 +4,7 @@ metasploit payload creator
 # installation
 
  
-git clone https://github.com/dhanu7673/
+     git clone https://github.com/dhanu7673/androrat
 
 
 
