@@ -10,6 +10,8 @@ git clone https://github.com/dhanu7673/
 
       cd androrat
       
+      chmod +x install.sh
+      
       bash install.sh
 # run
 bash androrat.sh
